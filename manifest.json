@@ -1,0 +1,42 @@
+{
+    "name": "FFCB",
+    "short_name": "FFCB",
+    "manifest_version": 2,
+    "description": "Soyez au courant des derniers matchs de chessboxing dès maintenant !",
+    "author": "Victor de la Fouchardiere",
+    "version": "1.10",
+    "permissions": [
+        "http://172.17.4.133:8080/",
+        "notifications",
+        "tabs"
+    ],
+    "options_page": "",
+    "browser_action":
+    {
+        "default_icon": "src/icon/icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "FFCB"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "icons":
+    {
+        "16": "src/icon/icon128.png",
+        "48": "src/icon/icon128.png",
+        "128": "src/icon/icon128.png"
+    },
+    "commands":
+    {
+        "_execute_browser_action":
+        {
+            "suggested_key":
+            {
+                "default": "Alt+E",
+                "windows": "Alt+E",
+                "mac": "Alt+E"
+            }
+        }
+    },
+    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+}

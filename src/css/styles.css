@@ -1,0 +1,165 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.col,.row{-webkit-box-direction:normal;display:-webkit-box;display:-ms-flexbox;display:flex}.row{-webkit-box-orient:horizontal;-ms-flex-direction:row;flex-direction:row}.col{-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column}.wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.nowrap{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.row-verti-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.col-verti-center,.row-hori-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.col-hori-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.row-hori-between{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.col-hori-between,.row-verti-between{-webkit-box-align:space-between;-ms-flex-align:space-between;align-items:space-between}.col-verti-between{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.row-hori-around{-ms-flex-pack:distribute;justify-content:space-around}.col-hori-around,.row-verti-around{-webkit-box-align:space-around;-ms-flex-align:space-around;align-items:space-around}.col-verti-around{-ms-flex-pack:distribute;justify-content:space-around}
+a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,iframe,img,ins,kbd,label,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,time,tt,u,var,video{margin:0;padding:0;border:0;font-size:100%}html{line-height:normal}ol,ul{list-style-type:none}blockquote,q{quotes:none}strong{font-weight:700;}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+
+/*=============================
+=            Popup            =
+=============================*/
+
+body.popup {
+	margin: 0;
+	padding: 10px;
+	width: 300px;
+	font-family: Georgia, serif;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+strong {
+	font-family: Georgia, serif;
+}
+
+body.popup > img.logo {
+	max-width: 100%;
+	display: inline-block;
+}
+
+div.container-fluid {
+	width: 250px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+
+body.popup ul.list-live {
+	padding: 0 3px;
+	margin: 5px 0;
+	list-style: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+div.container-fluid > div {
+	background: url(../img/stripes.png) center left repeat-x;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul.list-live > li:not(:last-child) {
+	width: 100%;
+	border-bottom: 1.5px dotted rgba(0,0,0,0.10);
+}
+
+article.match {
+	text-align: center;
+	padding: 8px;
+}
+
+article.match > h3.match-title {
+	color: #000;
+	font-size: 15px;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+}
+
+
+h1 {
+	background-color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #444;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+article.match > span.match-timer {
+	color: #444;
+	font-size: 12px;
+}
+
+article.match > div.match-players {
+	color: #000;
+	max-width: 80%;
+	margin: 6px auto;
+}
+
+article.match > div.match-players span.vs {
+	font-size: 17px;
+	display: block;
+}
+
+
+article.match > div.match-players div.match-player {
+	font-size: 12px;
+}
+
+article.match > div.match-players img {
+	width: 50px;
+	height: 50px;
+}
+
+article.match > div.match-actions > div{
+	width: 50%;
+	text-align: left;
+}
+
+article.match > div.match-actions > div:first-child{
+	width: 50%;
+	text-align: right;
+} 
+
+.live {
+	height: 13px;
+	width: 13px;
+	background-color: #c0392b;
+	border-radius: 50%;
+	display: block;
+	animation: popup 2s infinite .3s;
+}
+
+@keyframes popup {
+  0%, 100% {
+   	opacity: 1
+   	-webkit-transform: scale(1);
+   	   -moz-transform: scale(1);
+   	    -ms-transform: scale(1);
+   	     -o-transform: scale(1);
+   	        transform: scale(1);
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+   	   -moz-transform: scale(0);
+   	    -ms-transform: scale(0);
+   	     -o-transform: scale(0);
+   	        transform: scale(0);
+  }
+}
+
+article.match > div.match-actions button {
+	padding: 5px 7px;
+	cursor: pointer;
+	color: #fff;
+	border: 0;
+	margin: 0 5px;
+	border-radius: 3px;
+	font-size: 13px;
+	text-align: center;
+	background-color: #E74C3C;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*.btn {
+	background-color: #5FBA7D;
+}
+
+.btn2 {
+	background-color: #2980b9!important;
+}
+*/
